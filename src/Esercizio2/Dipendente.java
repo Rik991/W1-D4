@@ -1,6 +1,8 @@
-package Esercizio1;
+package Esercizio2;
 
-public class Dipendente {
+import Esercizio1.Dipartimento;
+
+public abstract class Dipendente implements ICheckIn{
     private int matricola;
     private double stipendio;
     private Dipartimento dipartimento;
@@ -26,5 +28,11 @@ public class Dipendente {
     public void setDipartimento(Dipartimento dipartimento) {
         this.dipartimento = dipartimento;
     }
-}
 
+    public double calcolaSalario() {
+        return 0;
+    }
+
+
+
+}
